@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import {useColors} from "@/app/hooks/color-hooks";
 
 const validationSchema = Yup.object({
     title: Yup.string()
@@ -12,7 +13,8 @@ const validationSchema = Yup.object({
         .required("Kolor jest wymagany")
 });
 
-export default function AddColorForm_with_formik({ onNewColor = f => f }) {
+export default function AddColorForm_with_formik() {
+    const {addColor} = useColors()
     const initialValues = {
         title: "",
         color: "#000000"
@@ -21,7 +23,7 @@ export default function AddColorForm_with_formik({ onNewColor = f => f }) {
     const handleSubmit = (values, { resetForm }) => {
         console.log(values.title);
         console.log(values.color);
-        onNewColor(values.title, values.color);
+        addColor(values.title, values.color);
         resetForm();
     };
 
