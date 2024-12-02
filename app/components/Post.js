@@ -1,0 +1,13 @@
+// app/components/Post.jsx
+"use client";
+
+import React from "react";
+
+export default function Post({ title, content }) {
+    return (
+        <div className="post">
+            <h2>{title}</h2>
+            <p>{content}</p>
+        </div>
+    );
+}
