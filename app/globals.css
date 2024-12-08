@@ -1,0 +1,48 @@
+/* app/globals.css */
+
+/* Stylizacja kontenera i głównej części */
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #e8e8e8;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Stylizacja menu */
+.menu {
+  width: 200px;
+  background-color: #001f3f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stylizacja calloutu */
+.callout {
+  background-color: white;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+/* Stylizacja zawartości */
+.contents {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Stylizacja komunikatu o błędzie */
+.error {
+  background-color: #efacac;
+  border: double 4px darkred;
+  color: darkred;
+  padding: 1em;
+}
