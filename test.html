@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo SSR + CSR</title>
+    <script>
+        // Przekazanie danych inicjalnych do klienta
+        window.__INITIAL_DATA__ = {"serverTime":"2024-12-16T05:38:47.732Z"};
+    </script>
+</head>
+<body>
+<!-- Kontener na aplikację wyrenderowaną na serwerze -->
+<div id="root">
+    <div class="container">
+        <h1>Demonstracja SSR + CSR</h1>
+        <div class="server-content">
+            <h2>Zawartość renderowana na serwerze:</h2>
+            <p>Czas serwera podczas renderowania: </p>
+        </div>
+        <div class="client-content">
+            <h2>Interaktywna zawartość po stronie klienta:</h2>
+            <p>Licznik: <!-- -->0</p>
+            <button>Zwiększ licznik</button>
+        </div>
+    </div>
+</div>
+
+<!-- Skrypt kliencki do hydratacji -->
+<script src="/client.bundle.js"></script>
+</body>
+</html>
+  

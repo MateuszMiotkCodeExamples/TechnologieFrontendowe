@@ -1,0 +1,31 @@
+{
+  "name": "technologiefrontendowe4",
+  "version": "1.0.0",
+  "description": "Przykłady z przedmiotu Technologie frontendowe / Technologie front-end / Bogate interfejsy użytkownika",
+  "main": "index.js",
+  "scripts": {
+    "build:client": "webpack --config webpack.client.js",
+    "build:server": "webpack --config webpack.server.js",
+    "build:streaming": "webpack --config webpack.streaming.js",
+    "build": "npm run build:client && npm run build:server",
+    "start": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "babel-loader": "^9.2.1",
+    "nodemon": "^3.1.9",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
