@@ -141,7 +141,7 @@ export default function Home() {
       {/* Kluczowe zasady */}
       <section className="my-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
         <h2 className="text-2xl mb-4 text-blue-900">📝 Kluczowe Zasady</h2>
-        <ol className="list-decimal list-inside space-y-3 text-blue-900">
+        <ol className="list-decimal list-inside space-y-3 text-black">
           <li><strong>Używaj funkcji aktualizującej</strong> gdy nowa wartość zależy od poprzedniej</li>
           <li><strong>Zawsze kopiuj obiekty</strong> przed modyfikacją (spread operator)</li>
           <li><strong>Nazwij jasno</strong> stany i funkcje aktualizujące</li>
