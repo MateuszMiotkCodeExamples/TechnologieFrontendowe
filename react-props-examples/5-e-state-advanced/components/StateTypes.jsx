@@ -30,28 +30,28 @@ export default function StateTypes() {
       
       <div className="space-y-3">
         <div>
-          <p className="text-sm text-gray-600">String:</p>
-          <p className="font-mono text-sm">{taskTitle}</p>
+          <p className="text-sm text-black font-medium">String:</p>
+          <p className="font-mono text-sm text-black">{taskTitle}</p>
         </div>
 
         <div>
-          <p className="text-sm text-gray-600">Number:</p>
-          <p className="font-mono text-sm">Completed: {completedCount} tasks</p>
+          <p className="text-sm text-black font-medium">Number:</p>
+          <p className="font-mono text-sm text-black">Completed: {completedCount} tasks</p>
         </div>
 
         <div>
-          <p className="text-sm text-gray-600">Number (float):</p>
-          <p className="font-mono text-sm">Progress: {progressPercentage.toFixed(1)}%</p>
+          <p className="text-sm text-black font-medium">Number (float):</p>
+          <p className="font-mono text-sm text-black">Progress: {progressPercentage.toFixed(1)}%</p>
         </div>
 
         <div>
-          <p className="text-sm text-gray-600">Boolean:</p>
-          <p className="font-mono text-sm">Loading: {isLoading ? 'true' : 'false'}</p>
+          <p className="text-sm text-black font-medium">Boolean:</p>
+          <p className="font-mono text-sm text-black">Loading: {isLoading ? 'true' : 'false'}</p>
         </div>
 
         <div>
-          <p className="text-sm text-gray-600">Null:</p>
-          <p className="font-mono text-sm">Selected: {selectedTask || 'null'}</p>
+          <p className="text-sm text-black font-medium">Null:</p>
+          <p className="font-mono text-sm text-black">Selected: {selectedTask || 'null'}</p>
         </div>
       </div>
 

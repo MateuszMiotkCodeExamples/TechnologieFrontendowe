@@ -74,11 +74,11 @@ export default function NamingExamples() {
       </div>
 
       <div className="mt-4 p-4 bg-gray-50 rounded">
-        <p className="text-sm font-semibold mb-2">Current state:</p>
-        <p className="text-sm text-gray-600">Title: {taskTitle}</p>
-        <p className="text-sm text-gray-600">Description: {taskDescription}</p>
-        <p className="text-sm text-gray-600">Status: {isUrgent ? 'Urgent' : 'Normal'}</p>
-        <p className="text-sm text-gray-600">Hours: {estimatedHours}</p>
+        <p className="text-sm font-semibold mb-2 text-black">Current state:</p>
+        <p className="text-sm text-black">Title: {taskTitle}</p>
+        <p className="text-sm text-black">Description: {taskDescription}</p>
+        <p className="text-sm text-black">Status: {isUrgent ? 'Urgent' : 'Normal'}</p>
+        <p className="text-sm text-black">Hours: {estimatedHours}</p>
       </div>
     </div>
   );

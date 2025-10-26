@@ -75,7 +75,7 @@ export default function ObjectUpdate() {
         </div>
 
         <div>
-          <p className="text-sm text-gray-700 mb-2">
+          <p className="text-sm text-black mb-2">
             Estimated hours: <span className="font-mono">{taskData.estimatedHours}</span>
           </p>
           <button
@@ -87,7 +87,7 @@ export default function ObjectUpdate() {
         </div>
 
         <div>
-          <p className="text-sm text-gray-700 mb-2">
+          <p className="text-sm text-black mb-2">
             Priority: <span className="font-mono">{taskData.priority}</span>
           </p>
           <button
@@ -100,7 +100,7 @@ export default function ObjectUpdate() {
       </div>
 
       <div className="mt-4 p-4 bg-gray-50 rounded">
-        <p className="text-sm font-semibold mb-2">Current state:</p>
+        <p className="text-sm font-semibold mb-2 text-black">Current state:</p>
         <pre className="text-xs bg-gray-900 text-green-400 p-3 rounded overflow-auto">
 {JSON.stringify(taskData, null, 2)}
         </pre>

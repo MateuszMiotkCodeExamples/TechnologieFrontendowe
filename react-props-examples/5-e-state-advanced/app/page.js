@@ -25,7 +25,7 @@ export default function Home() {
       {/* Konwencje nazewnictwa */}
       <section className="my-8">
         <h2 className="text-2xl mb-4 text-gray-900">Konwencje Nazewnictwa</h2>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black">
           Dobre nazewnictwo jest kluczowe dla czytelności kodu:
         </p>
         
@@ -59,7 +59,7 @@ export default function Home() {
       {/* Typy wartości stanu */}
       <section className="my-8">
         <h2 className="text-2xl mb-4 text-gray-900">Typy Wartości Stanu</h2>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black">
           useState może przyjąć dowolny typ wartości:
         </p>
         
@@ -92,7 +92,7 @@ export default function Home() {
       {/* Praca z obiektem stanu */}
       <section className="my-8">
         <h2 className="text-2xl mb-4 text-gray-900">Praca z Obiektem Stanu</h2>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black">
           Zamiast wielu osobnych stanów, możesz użyć jednego obiektu:
         </p>
         <ObjectState />
@@ -101,7 +101,7 @@ export default function Home() {
       {/* Problematyczne wzorce aktualizacji */}
       <section className="my-8">
         <h2 className="text-2xl mb-4 text-gray-900">Problematyczne wzorce aktualizacji</h2>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black">
           Bezpośrednie odnoszenie się do stanu może prowadzić do problemów:
         </p>
         <UpdatePatterns />
@@ -121,7 +121,7 @@ export default function Home() {
       {/* Funkcja aktualizująca z obiektami */}
       <section className="my-8">
         <h2 className="text-2xl mb-4 text-gray-900">Funkcja aktualizująca z obiektami</h2>
-        <p className="mb-4 text-gray-700">
+        <p className="mb-4 text-black">
           Zawsze używaj funkcji aktualizującej gdy nowa wartość zależy od poprzedniej:
         </p>
         <ObjectUpdate />

@@ -116,7 +116,7 @@ export default function ObjectState() {
       </form>
 
       <div className="mt-4 p-4 bg-gray-50 rounded">
-        <p className="text-sm font-semibold mb-2">Current state object:</p>
+        <p className="text-sm font-semibold mb-2 text-black">Current state object:</p>
         <pre className="text-xs bg-gray-900 text-green-400 p-3 rounded overflow-auto">
 {JSON.stringify(taskData, null, 2)}
         </pre>
