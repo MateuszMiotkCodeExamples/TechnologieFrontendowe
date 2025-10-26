@@ -32,7 +32,7 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-4 mb-4">
           <div className="p-4 bg-green-50 border border-green-200 rounded">
             <h4 className="font-semibold mb-2 text-green-900">✅ DOBRE</h4>
-            <code className="text-sm bg-white p-2 rounded block">
+            <code className="text-sm bg-white p-2 rounded block text-gray-900 font-mono">
               const [taskTitle, setTaskTitle] = useState('');
               <br />
               const [isCompleted, setIsCompleted] = useState(false);
@@ -43,7 +43,7 @@ export default function Home() {
           
           <div className="p-4 bg-red-50 border border-red-200 rounded">
             <h4 className="font-semibold mb-2 text-red-900">❌ ZŁE</h4>
-            <code className="text-sm bg-white p-2 rounded block">
+            <code className="text-sm bg-white p-2 rounded block text-gray-900 font-mono">
               const [a, setA] = useState('');
               <br />
               const [value, setValue] = useState('');
@@ -65,24 +65,24 @@ export default function Home() {
         
         <div className="grid grid-cols-5 gap-2 mb-4 text-sm">
           <div className="p-3 bg-blue-50 rounded">
-            <strong>String:</strong><br />
-            <code>'text'</code>
+            <strong className="text-gray-900">String:</strong><br />
+            <code className="text-gray-800">'text'</code>
           </div>
           <div className="p-3 bg-green-50 rounded">
-            <strong>Number:</strong><br />
-            <code>42</code>
+            <strong className="text-gray-900">Number:</strong><br />
+            <code className="text-gray-800">42</code>
           </div>
           <div className="p-3 bg-yellow-50 rounded">
-            <strong>Boolean:</strong><br />
-            <code>true/false</code>
+            <strong className="text-gray-900">Boolean:</strong><br />
+            <code className="text-gray-800">true/false</code>
           </div>
           <div className="p-3 bg-purple-50 rounded">
-            <strong>Object:</strong><br />
-            <code>{'{...}'}</code>
+            <strong className="text-gray-900">Object:</strong><br />
+            <code className="text-gray-800">{'{...}'}</code>
           </div>
           <div className="p-3 bg-pink-50 rounded">
-            <strong>Array:</strong><br />
-            <code>[...]</code>
+            <strong className="text-gray-900">Array:</strong><br />
+            <code className="text-gray-800">[...]</code>
           </div>
         </div>
 
@@ -155,7 +155,7 @@ export default function Home() {
         <h2 className="text-2xl mb-4 text-gray-900">Kiedy używać którego podejścia?</h2>
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <h4 className="font-semibold mb-2">Bezpośrednia wartość:</h4>
+            <h4 className="font-semibold mb-2 text-gray-900">Bezpośrednia wartość:</h4>
             <pre className="bg-gray-900 text-green-400 p-3 rounded text-xs overflow-auto">
 {`// NOWA wartość NIE zależy od starej
 setTaskTitle(event.target.value);
@@ -164,7 +164,7 @@ setCount(0);`}
             </pre>
           </div>
           <div>
-            <h4 className="font-semibold mb-2">Funkcja aktualizująca:</h4>
+            <h4 className="font-semibold mb-2 text-gray-900">Funkcja aktualizująca:</h4>
             <pre className="bg-gray-900 text-green-400 p-3 rounded text-xs overflow-auto">
 {`// NOWA wartość ZALEŻY od starej
 setCount(prev => prev + 1);
